@@ -1,12 +1,12 @@
 <template>
     <div class="w-1/2 mx-auto py-6">
-        <div v-if="messages.length" class="mb-4">
+        <div v-if="messages.length > 0" class="mb-4">
             <h3>Messages</h3>
             <div>
                 <div v-for="message in messages">
                     <p>{{ message.id}}</p>
                     <p>{{ message.body}}</p>
-                    <p>{{message.time}}</p>
+                    <p>{{ message.created_at}}</p>
                 </div>
             </div>
         </div>
